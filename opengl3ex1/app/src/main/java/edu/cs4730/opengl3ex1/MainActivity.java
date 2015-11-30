@@ -60,6 +60,7 @@ public class MainActivity extends Activity {
         ActivityManager am =
                 ( ActivityManager ) getSystemService ( Context.ACTIVITY_SERVICE );
         ConfigurationInfo info = am.getDeviceConfigurationInfo();
+        //get result base on version number
         return ( info.reqGlEsVersion >= 0x30000 );
     }
 
